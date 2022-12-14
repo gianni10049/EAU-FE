@@ -1,3 +1,4 @@
 export interface LogoData {
-	className?: string;
+	width: number | string;
+	height: 'full' | number | string;
 }

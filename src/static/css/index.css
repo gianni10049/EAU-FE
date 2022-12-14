@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    -ms-overflow-style: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat.ttf');
+}
+
+.text-loading:hover{
+    -webkit-background-clip: text;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left 1200px top -100px;
+    }
+    50% {
+        background-position: left 1800px top -100px;
+    }
+    100% {
+        background-position: left 2400px top -100px;
+    }
+}

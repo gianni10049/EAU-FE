@@ -1,5 +1,15 @@
 {
   "general": {
 
+  },
+  "header": {
+    "about": "Chi siamo",
+    "donate": "Dona",
+    "insights": "Informazioni",
+    "projects": "Progetti",
+    "water_projects": "Progetto Acqua",
+    "skills_education": "Abilità ed educazione",
+    "volunteers": "Volontari",
+    "blog": "Blog"
   }
 }

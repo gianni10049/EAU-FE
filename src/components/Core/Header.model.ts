@@ -1,7 +1,8 @@
 export interface menuVoiceInterface {
-	icon: any;
 	buttonText: any;
 	onClick?: any;
+	onMouseEnter?: any;
+	icon?: any;
 }
 
 export interface subMenuVoiceInterface {
@@ -12,9 +13,9 @@ export interface subMenuVoiceInterface {
 }
 
 export interface navLinkInterface {
-	icon: any;
 	hovered: boolean;
-	onClick: any;
+	onMouseEnter: any;
+	onMouseLeave: any;
 	current_url: boolean;
 	label: string;
 }

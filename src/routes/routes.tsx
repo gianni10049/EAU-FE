@@ -8,7 +8,7 @@ const routes: routeData[] = [
 		key: 'homepage',
 		component: <Homepage />,
 		account_needed: false,
-		nav: false,
+		nav: true,
 	}
 ];
 

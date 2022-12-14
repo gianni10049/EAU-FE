@@ -1,9 +1,9 @@
-import React, {createContext, useContext, useEffect, useState} from 'react';
-import {getTokenControl} from '../../apollo/Generic';
+import React, { createContext, useContext, useEffect, useState } from 'react';
+import { getTokenControl } from '../../apollo/Generic';
 import Page404 from '../404/404';
 import Header from '../Core/Header';
-import {Box, Container} from '@chakra-ui/react';
-import {AuthDataResponse, ProvideAuthData, RouteControlData,} from './RouteControl.model';
+import { Box, Container } from '@chakra-ui/react';
+import { AuthDataResponse, ProvideAuthData, RouteControlData } from './RouteControl.model';
 
 const authContext = createContext<AuthDataResponse>({
 	auth: false,
@@ -12,7 +12,7 @@ const authContext = createContext<AuthDataResponse>({
 
 export function ProvideAuth(data: ProvideAuthData) {
 	let auth = useProvideAuth({
-		account_needed: data.account_needed
+		account_needed: data.account_needed,
 	});
 	return (
 		<authContext.Provider value={auth}>
@@ -50,19 +50,21 @@ export const RouteControl = (props: RouteControlData) => {
 		if (props.data.nav) {
 			return (
 				<>
-					<Box id={'ct-main-navigation-bar'} gap={4}>
+					<Header />
+					<Box id={'ct-main-navigation-bar'} gap={4} overflow={'auto'}>
 						{/*LEFT*/}
-						<Header />
 						{/*RIGHT*/}
 						<Box
-							bg={'green.800'}
+							bg={'white'}
 							w={'full'}
-							minH={'100vh'}
+							pt={'150px'}
+							minH={'calc(100vh - 100px)'}
+							h={'8000px'}
 							bgSize={'50px'}
 							backgroundRepeat={'repeat'}
 							id={'global_windows'}>
 							{/*RIGHT content*/}
-							<Container maxW={'1440px'}>
+							<Container maxW={'full'}>
 								{props.children}
 							</Container>
 						</Box>
