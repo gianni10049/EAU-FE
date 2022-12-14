@@ -2,7 +2,6 @@ import {
 	Box,
 	Flex,
 	Icon,
-	Image,
 	Link,
 	Menu,
 	MenuButton,
@@ -15,8 +14,8 @@ import { Link as ReachLink } from 'react-router-dom';
 import { menuVoiceInterface } from './Header.model';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import homepage_logo from '../../static/images/logo/logo.png';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import Logo from './logo';
 
 const MenuVoice = (props: menuVoiceInterface) => {
 	return (
@@ -87,10 +86,7 @@ const Header = () => {
 			<Flex justifyContent={'space-between'} alignItems={'center'} h={'full'} w={'90%'} m={'0 auto'} pos={'relative'} zIndex={10}>
 				{/*Links*/}
 				<Box>
-					{/*<Logo width={'150px'} height={'full'} />*/}
-					<Box width={'200px'} height={'full'}>
-						<Image src={homepage_logo} alt='Dan Abramov' />
-					</Box>
+					<Logo width={'200px'} height={'full'} />
 				</Box>
 				<Box
 					display={'flex'}
