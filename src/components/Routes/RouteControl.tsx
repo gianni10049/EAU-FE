@@ -4,6 +4,7 @@ import Page404 from '../404/404';
 import Header from '../Core/Header';
 import { Box, Container } from '@chakra-ui/react';
 import { AuthDataResponse, ProvideAuthData, RouteControlData } from './RouteControl.model';
+import Footer from '../Core/Footer';
 
 const authContext = createContext<AuthDataResponse>({
 	auth: false,
@@ -50,23 +51,25 @@ export const RouteControl = (props: RouteControlData) => {
 		if (props.data.nav) {
 			return (
 				<>
-					<Header />
 					<Box id={'ct-main-navigation-bar'} gap={4} overflow={'auto'}>
 						{/*LEFT*/}
 						{/*RIGHT*/}
 						<Box
 							bg={'white'}
 							w={'full'}
-							pt={'150px'}
 							minH={'calc(100vh - 100px)'}
-							h={'8000px'}
 							bgSize={'50px'}
 							backgroundRepeat={'repeat'}
 							id={'global_windows'}>
-							{/*RIGHT content*/}
-							<Container maxW={'full'}>
+							<Header />
+							<Container
+								maxW={'full'}
+								h={'calc(100vh - 240px)'}
+								overflow={'auto'}
+							>
 								{props.children}
 							</Container>
+							<Footer/>
 						</Box>
 					</Box>
 				</>

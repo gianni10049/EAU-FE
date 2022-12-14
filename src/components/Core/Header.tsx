@@ -21,7 +21,7 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 const MenuVoice = (props: menuVoiceInterface) => {
 	return (
 		<Box
-			color={'green.textLight'}
+			color={'rgba(255,255,255,0.7)'}
 			cursor={'pointer'}
 			py={3}
 			pr={3}
@@ -35,7 +35,7 @@ const MenuVoice = (props: menuVoiceInterface) => {
 				verticalAlign={'middle'}
 				fontFamily={'Montserrat'}
 				ml={6}
-				color={'rgba(16,164,120,0.73)'}
+				color={'rgba(255,255,255,0.7)'}
 				bgImage={'https://image.ibb.co/ciSeac/image.png'}
 				bgRepeat={'repeat-x'}
 				className={'text-loading'}
@@ -64,17 +64,27 @@ const Header = () => {
 
 	return (
 		<Box
-			bg={'rgba(255,255,255,0.91)'}
-			pos={'fixed'}
-			left={0}
-			top={0}
+			bg={'linear-gradient(60deg, rgba(200, 255, 210, 1) 0%, rgba(0,172,193,0.7) 100%)'}
 			w={'100vw'}
 			h={'120px'}
 			borderBottom={'1px solid black'}
 			boxShadow='0px -5px 10px 0px rgba(0, 0, 0, 0.5)'
 			filter=' drop-shadow(0px 5px 5px rgba(0,0,0,0.3))'
 			zIndex={100}>
-			<Flex justifyContent={'space-between'} alignItems={'center'} h={'full'} w={'90%'} m={'0 auto'}>
+			<svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+				 viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+				<defs>
+					<path id="gentle-wave"
+						  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g className="parallax">
+					<use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(0,172,193,0.1)" />
+					<use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(0,172,193,0.2)" />
+					<use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(0,172,193,0.4)" />
+					<use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(0,172,193,0.5)" />
+				</g>
+			</svg>
+			<Flex justifyContent={'space-between'} alignItems={'center'} h={'full'} w={'90%'} m={'0 auto'} pos={'relative'} zIndex={10}>
 				{/*Links*/}
 				<Box>
 					{/*<Logo width={'150px'} height={'full'} />*/}
@@ -92,13 +102,6 @@ const Header = () => {
 					<Menu isOpen={(subMenu === 'projects')}>
 						<MenuButton
 							onMouseEnter={() => setSubMenu('projects')}
-							fontSize={'2.5rem'}
-							verticalAlign={'middle'}
-							fontFamily={'Montserrat'}
-							color={'rgba(16,164,120,0.73)'}
-							bgImage={'https://image.ibb.co/ciSeac/image.png'}
-							bgRepeat={'repeat-x'}
-							className={'text-loading'}
 						>
 							<MenuVoice
 								buttonText={t('header.projects')}
@@ -147,13 +150,6 @@ const Header = () => {
 					<Menu isOpen={(subMenu === 'insights')}>
 						<MenuButton
 							onMouseEnter={() => setSubMenu('insights')}
-							fontSize={'2.5rem'}
-							verticalAlign={'middle'}
-							fontFamily={'Montserrat'}
-							color={'rgba(16,164,120,0.73)'}
-							bgImage={'https://image.ibb.co/ciSeac/image.png'}
-							bgRepeat={'repeat-x'}
-							className={'text-loading'}
 						>
 							<MenuVoice
 								buttonText={t('header.insights')}

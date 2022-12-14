@@ -3,7 +3,10 @@ import { Box } from '@chakra-ui/react';
 
 const Homepage = () => {
 	return (
-		<Box w={'full'}>asdasa</Box>
+		<Box
+			w={'full'}
+			color={'red'}
+		>asdasa</Box>
 	);
 };
 
