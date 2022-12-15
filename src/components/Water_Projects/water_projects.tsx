@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Button, Heading, Link } from '@chakra-ui/react';
-import donate_hero from '../../static/images/donate/donate_hero.jpg';
+import water_hero from '../../static/images/water_projects/water_hero.jpg';
 import { useTranslation } from 'react-i18next';
 import { Link as ReachLink } from 'react-router-dom';
 
-const Donate = () => {
+const Water_Projects = () => {
 	const { t } = useTranslation();
 
 
@@ -14,7 +14,7 @@ const Donate = () => {
 			w={'full'}
 		>
 			<Box
-				bgImage={donate_hero}
+				bgImage={water_hero}
 				bgRepeat={'no-repeat'}
 				bgPos={'center center'}
 				bgSize={'cover'}
@@ -33,7 +33,7 @@ const Donate = () => {
 							letterSpacing={0.6}
 							mb={30}
 						>
-							{t('donate.hero_title')}
+							{t('water.hero_title')}
 						</Heading>
 						<Heading
 							as='h1'
@@ -45,7 +45,7 @@ const Donate = () => {
 							letterSpacing={0.6}
 							my={20}
 						>
-							{t('donate.hero_subtitle')}
+							{t('water.hero_subtitle')}
 						</Heading>
 						
 					</Box>
@@ -59,4 +59,4 @@ const Donate = () => {
 	);
 };
 
-export default Donate;
+export default Water_Projects;
