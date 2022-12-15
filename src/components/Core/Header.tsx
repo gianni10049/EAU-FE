@@ -84,7 +84,6 @@ const Header = () => {
 				</g>
 			</svg>
 			<Flex justifyContent={'space-between'} alignItems={'center'} h={'full'} w={'90%'} m={'0 auto'} pos={'relative'} zIndex={10}>
-				{/*Links*/}
 				<Box>
 					<Logo width={'200px'} height={'full'} />
 				</Box>
@@ -118,7 +117,7 @@ const Header = () => {
 								className={'text-loading'}
 							>
 								<Link
-									to={'/water_project'}
+									to={'/water_projects'}
 									as={ReachLink}>
 									{t('header.water_projects')}
 								</Link>
@@ -192,7 +191,7 @@ const Header = () => {
 					</Menu>
 
 					<Link
-						to={'/private_donate'}
+						to={'/donate'}
 						as={ReachLink}>
 						<MenuVoice
 							buttonText={t('header.donate')}

@@ -1,5 +1,21 @@
 {
   "general": {
 
+  },
+  "header": {
+    "about": "About",
+    "donate": "Donate",
+    "insights": "Insights",
+    "projects": "Projects",
+    "water_projects": "Water Projects",
+    "skills_education": "Skills and Education",
+    "volunteers": "Volunteers",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero_title": "water equality",
+    "hero_subtitle": "One billion people worldwide still do not have access to safe drinking water",
+    "learn_button": "Learn more",
+    "donate_button": "Donate"
   }
 }
