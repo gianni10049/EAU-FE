@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Button, Heading, Link } from '@chakra-ui/react';
+import { Box, Heading} from '@chakra-ui/react';
 import water_hero from '../../static/images/water_projects/water_hero.jpg';
 import { useTranslation } from 'react-i18next';
-import { Link as ReachLink } from 'react-router-dom';
 
 const Water_Projects = () => {
 	const { t } = useTranslation();

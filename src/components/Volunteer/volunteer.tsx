@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
-import education_hero from '../../static/images/education/education_hero.jpg';
+import volunteer_hero from '../../static/images/volunteer/hero_volunteer.jpeg';
 import { useTranslation } from 'react-i18next';
 
-const Education = () => {
+const Volunteer = () => {
 	const { t } = useTranslation();
 
 
@@ -13,7 +13,7 @@ const Education = () => {
 			w={'full'}
 		>
 			<Box
-				bgImage={education_hero}
+				bgImage={volunteer_hero}
 				bgRepeat={'no-repeat'}
 				bgPos={'center center'}
 				bgSize={'cover'}
@@ -32,7 +32,7 @@ const Education = () => {
 							letterSpacing={0.6}
 							mb={30}
 						>
-							{t('education.hero_title')}
+							{t('volunteer.hero_title')}
 						</Heading>
 						<Heading
 							as='h1'
@@ -44,7 +44,7 @@ const Education = () => {
 							letterSpacing={0.6}
 							my={20}
 						>
-							{t('education.hero_subtitle')}
+							{t('volunteer.hero_subtitle')}
 						</Heading>
 						
 					</Box>
@@ -58,4 +58,4 @@ const Education = () => {
 	);
 };
 
-export default Education;
+export default Volunteer;

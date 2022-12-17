@@ -3,13 +3,50 @@
 
   },
   "header": {
-    "about": "Chi siamo",
+    "about": "Noi",
     "donate": "Dona",
-    "insights": "Informazioni",
+    "insights": "Insights",
     "projects": "Progetti",
-    "water_projects": "Progetto Acqua",
-    "skills_education": "Abilità ed educazione",
-    "volunteers": "Volontari",
+    "water_projects": "Aqua",
+    "skills_education": "Corsi",
+    "volunteers": "Fare il volontatio",
     "blog": "Blog"
+  },
+  "home": {
+    "hero_title": "water equality",
+    "hero_subtitle": "One billion people worldwide still do not have access to safe drinking water",
+    "learn_button": "Learn more",
+    "donate_button": "Donate"
+  },
+  "donate": {
+    "hero_title": "Donate",
+    "hero_subtitle": "Your support is vital to ensure that we deliver safe and sustainable water supplies to communities in Uganda",
+    "learn_button": "Learn more",
+    "donate_button": "Donate"
+  },
+  "water": {
+    "hero_title": "Water Projects",
+    "hero_subtitle": "Safe, sustainable water is an essential part of life on Earth. We want to live in a world where water and sanitation facilities are available for all",
+    "learn_button": "Learn more",
+    "donate_button": "Donate"
+  },
+  "education": {
+    "hero_title": "Skill And Training",
+    "hero_subtitle": "Empowering young people with the skills and knowledge to become WASH changemakers in their communities",
+    "learn_button": "Learn more",
+    "donate_button": "Donate"
+  },
+  "about": {
+    "hero_title": "About us"
+  },
+  "volunteer": {
+    "hero_title": "Volunteer with us",
+    "hero_subtitle": "Empowering young people with the skills and knowledge to become WASH changemakers in their communities"
+    
+  },
+  "blog": {
+    "hero_title": "Equal Aqua Blog",
+    "hero_subtitle": "Empowering young people with the skills and knowledge to become WASH changemakers in their communities"
+  
   }
 }

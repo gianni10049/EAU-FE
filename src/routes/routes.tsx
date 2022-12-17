@@ -4,6 +4,9 @@ import {routeData} from './routes.model';
 import Donate from '../components/Donate/donate';
 import Water_Projects from '../components/Water_Projects/water_projects';
 import Education from '../components/Education/education';
+import Blog from '../components/Blog/blog';
+import About from '../components/About/about';
+import Volunteer from '../components/Volunteer/volunteer';
 
 const routes: routeData[] = [
 	{
@@ -25,11 +28,32 @@ const routes: routeData[] = [
 	{
 		path: '/water_projects',
 		key: 'water_projects',
+		// eslint-disable-next-line react/jsx-pascal-case
 		component: <Water_Projects />,
 		account_needed: false,
 		nav: true,
 	},
-
+	{
+		path: '/blog',
+		key: 'blog',
+		component: <Blog />,
+		account_needed: false,
+		nav: true,
+	},
+	{
+		path: '/about',
+		key: 'about',
+		component: <About />,
+		account_needed: false,
+		nav: true,
+	},
+	{
+		path: '/volunteers',
+		key: 'volunteers',
+		component: <Volunteer />,
+		account_needed: false,
+		nav: true,
+	},
 	{
 		path: '/education',
 		key: 'education',

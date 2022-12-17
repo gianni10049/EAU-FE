@@ -9,7 +9,7 @@
     "projects": "Projects",
     "water_projects": "Water Projects",
     "skills_education": "Skills and Education",
-    "volunteers": "Volunteers",
+    "volunteers": "Volunteers with us",
     "blog": "Blog"
   },
   "home": {
@@ -35,5 +35,18 @@
     "hero_subtitle": "Empowering young people with the skills and knowledge to become WASH changemakers in their communities",
     "learn_button": "Learn more",
     "donate_button": "Donate"
+  },
+  "about": {
+    "hero_title": "About us"
+  },
+  "volunteer": {
+    "hero_title": "Volunteer with us",
+    "hero_subtitle": "Use your skills to do good"
+    
+  },
+  "blog": {
+    "hero_title": "Blog",
+    "hero_subtitle": "Read more on our stories from the field and how our job has an impact on people."
+  
   }
 }
