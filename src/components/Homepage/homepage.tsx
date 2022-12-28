@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Button, Heading, Link } from '@chakra-ui/react';
+import { Box, Button, Heading, Link, Text } from '@chakra-ui/react';
 import homepage_hero from '../../static/images/home/cropped-3-1-scaled-1.jpeg';
 import { useTranslation } from 'react-i18next';
 import { Link as ReachLink } from 'react-router-dom';
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
 
 const Homepage = () => {
 	const { t } = useTranslation();
@@ -95,7 +96,26 @@ const Homepage = () => {
 
 
 			</Box>
-
+					<Box textAlign={'center'}>
+					<Heading> {t('home.progress')} </Heading>
+					</Box>
+					<Box display={'flex'} w={'50%'} minW={'600px'} justifyContent={'space-between'}
+							 margin={'0 auto'}>
+					<CircularProgress isIndeterminate color='green.300'>
+					<CircularProgressLabel>9542</CircularProgressLabel>
+					</CircularProgress>
+					<CircularProgress isIndeterminate color='green.300'>
+					<CircularProgressLabel>6627</CircularProgressLabel>
+					</CircularProgress>
+					<CircularProgress isIndeterminate color='green.300'>
+					<CircularProgressLabel>482</CircularProgressLabel>
+					</CircularProgress>
+					
+					</Box>
+					<Box display={'flex'} w={'50%'} minW={'600px'} justifyContent={'space-between'}
+							 margin={'0 auto'} textAlign={'left'}>
+					<Text fontSize='xs'>{t('home.progress_description1')}</Text>
+					</Box>
 		</Box>
 	);
 };
